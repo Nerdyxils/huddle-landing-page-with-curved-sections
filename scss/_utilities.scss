@@ -1,0 +1,37 @@
+// COLOR STACK
+$Very_Dark_Cyan: hsl(192, 100%, 9%);
+$Very_Pale_Blue: hsl(207, 100%, 98%);
+$Pink: hsl(322, 100%, 66%);
+$grey: #6f6f6f;
+
+// FONT STACK
+$paragraph_font: 'Open Sans', sans-serif;
+$heading_font: 'Poppins', sans-serif;
+
+
+h1,h2 {
+    font-size: 2rem;
+    font-family: $heading_font;
+    line-height: 1.5;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+    font-family: $heading_font;
+    line-height: 1.2;
+}
+
+p, a, button, li {
+    font-size: 1rem;
+    font-family: $paragraph_font;
+}
+
+button {
+    border-radius: 100px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    cursor: progress;
+    -webkit-box-shadow: 0px 2px 2px 2px #ccc; 
+    -moz-box-shadow:    0px 2px 2px 2px #ccc;  
+    box-shadow:         0px 2px 2px 2px #ccc;
+}

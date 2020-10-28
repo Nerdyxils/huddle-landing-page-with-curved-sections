@@ -1,0 +1,379 @@
+@import 'utilities';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+small, button {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    padding: 3.25rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-main {
+    padding: 1em 6em;
+    color: #ffffff;
+    background-color: $Pink;
+    border: none;
+} 
+
+header {
+    text-align: center;
+    line-height: 1.5;
+
+    .top-header {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        img {
+            width: 70%;
+        }
+
+        .btn-top {
+            padding: .6em 2em;
+            border: 1px solid $Pink;
+            color: $Pink;
+            background-color: transparent;
+        }
+    }
+
+    .header-text {
+        width: 70%;
+        margin: 0 auto;
+
+        p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            color: $grey;
+        }
+    }
+
+    .header-img {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .header-rating  {
+        width: 60%;
+        margin: 50px auto;
+        
+
+        img {
+            width: 15%;
+            margin-left: -180px;
+        }
+
+        h1 {
+            line-height: 0;
+            font-size: 5rem;
+        }
+
+        small {
+            color: $grey;
+        }
+    }
+}
+
+.main-body {
+    margin: 50px auto;
+
+    img {
+        margin: 0;
+        margin-bottom: -10px;
+    }
+
+    .mobile-bg {
+        display: none;
+    }
+
+    .background {
+        background-color: $Very-Pale-Blue;
+        margin: 0px auto;
+    }
+
+    .text {
+        width: 50%;
+
+        p {
+            color: $grey;
+        }
+    }
+
+    .txt-img {
+        width: 35%;
+    }
+}
+
+.sign-up {
+    text-align: center;
+    margin: 100px auto;
+}
+
+footer {
+    color: #ffffff;
+
+    .bg-img-footer {
+        margin-bottom: -10px;
+    }
+
+    .main-footer-bg {
+        background-color: $Very-Dark-Cyan;
+        padding: 30px 0;
+
+        .row {
+            justify-content: space-between;
+            align-items: center;
+
+            .huddle {
+                width: 40%;
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+
+                p {
+                    margin: 30px 0;
+                    font-size: .8rem;
+                }
+
+                ul {
+                    margin-top: 30px;
+                    line-height: 2.5;
+
+                    li {
+                        list-style: none;
+                        font-size: .8rem;
+                        margin-left: -40px;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                        
+                        a {
+                            color: #ffffff;
+                            font-size: .8rem;
+                        }
+                    }
+
+                    .social-item {
+                        display: inline-block;
+                        border-radius: 60px;
+                        box-shadow: 0px 0px 2px #ffffff;
+                        padding: 0.5em 0.6em;
+                        margin: 5px;
+                    }
+                }
+            }
+
+            .newsletter {
+                width: 40%;
+                align-self: flex-start;
+
+                p {
+                    font-size: .8rem;
+                }
+
+                input {
+                    padding: .7em 3em;
+                    border-radius: 4px;
+                    border: none;
+                    margin-right: 20px;
+                }
+
+                .btn-sub {
+                    padding: .7em 2em;
+                    color: #fff;
+                    background-color: $Pink;
+                    border-radius: 4px;
+                    border: none;
+                    box-shadow: none;
+                    font-size: .8rem;
+                }
+            }
+        }
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
+
+            a { 
+                color: hsl(228, 45%, 44%); 
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 1.2rem;
+    }
+    body {
+        text-align: center;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+
+        .btn-top {
+            margin-top: -15px;
+        }
+
+        .header-text {
+            width: 95%;
+            margin: 0 auto;
+    
+            p {
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    
+        .header-img {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .header-rating {
+            width: 100%;
+            margin: 10px auto;
+
+            .rating-two {
+                margin-top: 70px;
+            }
+        }
+    }
+
+
+    .main-body {
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+    
+        img {
+            margin: 0;
+            margin-bottom: -10px;
+        }
+
+        .desktop-bg {
+            display: none;
+        }
+
+        .mobile-bg {
+            display: block;
+        }
+
+        .text {
+            order: 2;
+            width: 90%;
+            margin-top: 50px;
+        }
+    
+        .txt-img {
+            order: 1;
+            width: 80%;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: left;
+
+        .bg-img-footer {
+            margin-bottom: -2px;
+        }
+
+        .main-footer-bg {
+        
+            .row {
+                text-align: center;
+                text-align: left;
+                .huddle {
+                    order: 2;
+                    text-align: left;
+                    width: 80%;
+                    margin: 50px auto;
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .newsletter {
+                    order: 1;
+                    width: 80%;
+                    margin: 0 auto;
+                    align-self: center;
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                    input {
+                        width: 80%;
+                    }
+
+                    .btn-sub {
+                        margin-top: 20px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .btn-sub {
+        margin-top: 20px;
+        
+    }
+
+    .rating-two {
+        margin-left: 50px;
+    }
+
+
+
+}
+
